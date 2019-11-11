@@ -234,7 +234,7 @@ This will produce the following table across all tasks:
 
 Conjoint on SciSci Survey is ready to be run through!
 
-## Pre-processing data 
+## Pre-processing 
 
 SoSci Survey stores participants' responses in several formats including CSV format. Responses to classical survey questions are presented in straightforward way. The conjoint output, however, looks convoluted and make sence only pre-processing in R. Essentially, the output contains the information on attributes and levels a respondent saw on the screen: `F-1(task)-1(profile)-1(attribute)`. For instance, this is a two data points generated from one respondent:
 
