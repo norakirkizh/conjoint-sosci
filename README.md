@@ -186,7 +186,7 @@ $featurearray = array("Reason for running" => array("Because political elites do
   
 SoSci Survey is a survey platform that allows running a survey experiments free of charge if the project is made for academic purposes. After creating a survey project on the SoSci platform, the php script from conjointsdt goes to php field with important additions programmed by [Roberto Ulloa](https://github.com/robertour) (GESIS Leibnitz Institute of Social Sciences) below.
 
-![php_sosci](php_sosci)
+![php_sosci](php_sosci.png)
 
 To make conjoint design to be distributed across all tasks this code whould go first:
 ```php
