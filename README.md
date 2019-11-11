@@ -1,6 +1,6 @@
 # Example of a conjoint survey experiment based on SoSci Survey platform
 
-This repository consists of all nessesary scripts for running a conjoint survey experiment on SoSci Survey, pre-processing, and the analysis in R.
+This repository consists of all necessary scripts for running a conjoint survey experiment on SoSci Survey, pre-processing, and the analysis in R.
 
 Conjoint survey experiment helps to identify peoples' preferences over a particular object of interest in a multidimentional framework. For instance, when users decides to read a news article online, they might consider several features (dimentions) of the article before reading it. Let's say topic relevance (climate change, immigration, health care), credibility of the news source (established media, new digital born news web site), and partizanship (Republican or Democrat) are the only possible features of news articles. How can we identify what feature has the largest utility and what combination of features is the most desiable for users? Conjoint survey experiments can help to answer this kind of questions.
 
@@ -236,7 +236,7 @@ Conjoint on SciSci Survey is ready to be run through!
 
 ## Pre-processing data 
 
-SoSci Survey stores participants responces in several formats including csv. Responces to classical survey questions are presented in straightforward way. The conjoint output, however, looks convoluted and make sence only pre-processing in R. Essentially, the output contains the information on attributes and levels a respondent saw on the screen: `F-1(task)-1(profile)-1(attribute)`. For instance, this is a two data points generated from one respondent:
+SoSci Survey stores participants' responses in several formats including CSV format. Responses to classical survey questions are presented in straightforward way. The conjoint output, however, looks convoluted and make sence only pre-processing in R. Essentially, the output contains the information on attributes and levels a respondent saw on the screen: `F-1(task)-1(profile)-1(attribute)`. For instance, this is a two data points generated from one respondent:
 
 `\"F-1-1\":\"Immigration\, \"F-1-1-1\":\"Allow up to 200,000 immigrants a year to come to the country",`
 
@@ -294,7 +294,7 @@ table(valid_dt$REF)
 
 mess <- data.frame(strsplit(valid_dt$Attrb.Levels, ",")) 
 ncol(mess)
-names(mess) <- c(valid_dt$REF) # rename columns with corresponding respondent id
+names(mess) <- c(valid_dt$REF) # rename columns with corresponding participant id
 
 ########################################################################################
 # Create a data frame with all valid cases from the conjoint experiment for the analysis
