@@ -1,4 +1,4 @@
-# Example of a conjoint survey experiment in SoSci Survey platform
+# Example of a conjoint survey experiment on SoSci Survey platform
 
 This repository consists of all necessary scripts for running a conjoint survey experiment on SoSci Survey, pre-processing, and the analysis in R.
 
